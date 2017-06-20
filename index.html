@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>nativeDroid II - jQueryMobile Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/tweetdrafter.css">
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+
+	</head>
+	<body>
+		<div id="pageone" data-role="page">
+			<div data-role="header" data-position="fixed">
+				<a href="#leftpanel" class="ui-btn-left ui-btn waves-effect waves-button  waves-effect waves-button" data-role="button" role="button" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;"><i class="zmdi zmdi-menu"></i></a>
+				<h1>tweetdrafter</h1>
+			</div>
+			<div data-role="main">
+				<ul data-role="listview" id="tweetlist">
+				</ul>
+			</div>
+			<a id="newtweet" href="#pagetwo" style="position:fixed; right: 1em; bottom: 1em;" class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi zmdi-plus zmd-2x"></i></a>
+
+			<div data-role="popup" id="actions">
+				<div data=role="content">
+					<p id="popuptweet"></p>
+					<a id="tweetlink" data-role="button" class=" ui-btn-primary waves-effect waves-button waves-effect waves-button" data-clipboard-action="copy" data-clipboard-target="#ghosttweet">Twittear</a>
+			    <a id="copybtn" data-role="button" class=" ui-btn-primary waves-effect waves-button waves-effect waves-button" data-clipboard-action="copy" data-clipboard-target="#ghosttweet">Copiar</a>
+					<a id="contextualdelbtn" data-role="button" class=" ui-btn-primary waves-effect waves-button waves-effect waves-button">Borrar</a>
+		    </div>
+			<textarea id="ghosttweet"></textarea>
+		</div>
+
+			<div data-role="panel" id="leftpanel" data-display="overlay"> 
+				<img src="res/assets/tweetdrafter.png" alt="Tweetdrafter">
+				<h1>Tweetdrafter</h1>
+				<ul>
+					<li>Guido Emiliano Tálamo</li>
+					<li>DWM2A - 2017</li>
+					<li>Interacción con Dispositivos Móviles</li>
+					<li>Profesor Omar Toyos</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+
+		<div id="pagetwo" data-role="page">
+			<div data-role="header">
+				<a id="backbtn" class="ui-btn-left ui-btn waves-effect waves-button  waves-effect waves-button" data-wow-delay="0.8s" data-role="button" data-rel="back" role="button" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;"><i class="zmdi zmdi-long-arrow-left"></i></a>
+				<h1>Editar tweet</h1>
+				<a id="del" class="ui-btn-right ui-btn waves-effect waves-button  waves-effect waves-button" data-wow-delay="0.8s" data-direction="reverse" data-role="button"role="button" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn;"><i class="zmdi zmdi-delete"></i></a>
+			</div>
+
+			<div data-role="main">
+				<textarea rows="14" name="textarea" id="textarea" autofocus style="margin:auto;padding:1em;font-size:1.6em;line-height:120%;font-family:serif;resize:none;" data-autogrow="false"></textarea>
+				<span id="charcount" style="text-align: right; display: block; margin-right: 1em"></span>
+			</div>
+		</div>
+
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/jquery.mobile.toast.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="js/nd2settings.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/tweetdrafter.js"></script>
+
+	</body>
+</html>
