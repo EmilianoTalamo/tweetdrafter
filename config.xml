@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.emilianotalamo.tweetdrafter"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>tweetdrafter</name>
+
+  <description>
+      Write drafts for tweets.
+  </description>
+
+  <author href="https://github.com/EmilianoTalamo" email="emilianotalamo@gmail.com">
+      Emiliano Tálamo
+  </author>
+
+  <platform name="android" />
+  <preference name="permissions" value="none"/>
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="orientation" value="portrait" /> 
+  <preference name="target-device" value="universal" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
+
+  <plugin name="cordova-plugin-statusbar" source="npm"/>
+  <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#2196f3" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+
+  <icon src="res/icon/android/icon-36-ldpi.png" platform="android" qualifier="ldpi" />
+  <icon src="res/icon/android/icon-48-mdpi.png" platform="android" qualifier="mdpi" />
+  <icon src="res/icon/android/icon-72-hdpi.png" platform="android" qualifier="hdpi" />
+  <icon src="res/icon/android/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
+  <icon src="res/icon/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
+  <icon src="res/icon/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
+  <gap:splash src="res/screen/android/splash.png" 
+    gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="res/screen/android/splash_hdpi.png" 
+    gap:platform="android" gap:density="hdpi" />
+  <splash platform="android" qualifier="port-ldpi" src="res/screen/android/splash.png" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" 
+    gap:platform="android" gap:density="xhdpi" />
+  <gap:splash src="res/screen/android/screen-xxhdpi-portrait.png" 
+    gap:platform="android" gap:density="xxhdpi" />
+  <gap:splash src="res/screen/android/screen-xxxhdpi-portrait.png" 
+    gap:platform="android" gap:density="xxxhdpi" />
+
+  <access />
+
+</widget>
