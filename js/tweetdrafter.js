@@ -20,7 +20,6 @@ function charcount()
 
 function refreshtweets()
 {
-	console.log("refreshing");
 	if(current.html() == "")
 	{
 		dilit();
@@ -36,7 +35,6 @@ function refreshtweets()
 	});
 	$(tweetlist).on('taphold', function()
 	{
-		console.log("holding");
 		$(tweetlist).unbind('tap');
 		$('#actions').popup('open', {transition: 'fade', changeHash : false});
 		current = $(this);
@@ -50,7 +48,6 @@ function refreshtweets()
 
 function edit()
 {
-	console.log("editing");
 	tweet.val($(current).text());
 	charcount();
 	$.mobile.navigate('#pagetwo', {transition: 'fade'});
@@ -70,7 +67,6 @@ function edit()
 
 function newtw()
 {
-	console.log("new");
 	n = $('<li class="ui-li-static ui-body-inherit ui-first-child waves-effect waves-button  waves-effect waves-button"></li>');
 	$("#tweetlist").append(n);
 	current = n;
@@ -79,7 +75,6 @@ function newtw()
 
 function dilit()
 {
-	console.log("deleting");
 	$(current).remove();
 }
 
