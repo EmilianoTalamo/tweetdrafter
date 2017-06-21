@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.emilianotalamo.tweetdrafter"
     versionCode = "10"
-    version     = "1.0.2" >
+    version     = "1.0.1" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -24,7 +24,7 @@
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" /> 
   <preference name="target-device" value="universal" />
-  <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+  <plugin name="cordova-plugin-splashscreen" spec="npm" />
 
   <plugin name="cordova-plugin-statusbar" source="npm"/>
   <preference name="StatusBarOverlaysWebView" value="true" />
@@ -39,12 +39,12 @@
   <icon src="res/icon/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
   <platform name="android">
-    <splash src="res/screen/android/320-ldpi.png" density="port-ldpi"/>
-    <splash src="res/screen/android/480-mdpi.png" density="port-mdpi"/>
-    <splash src="res/screen/android/800-hdpi.png" density="port-hdpi"/>
-    <splash src="res/screen/android/1280-xhdpi.png" density="port-xhdpi"/>
-    <splash src="res/screen/android/1600-xxhdpi.png" density="port-xxhdpi"/>
-    <splash src="res/screen/android/1920-xxxhdpi.png" density="port-xxxhdpi"/>
+    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+    <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi"/>
+    <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
   </platform>
 
   <preference name="SplashMaintainAspectRatio" value="true" />
