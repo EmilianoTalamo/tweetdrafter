@@ -24,7 +24,7 @@
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" /> 
   <preference name="target-device" value="universal" />
-  <plugin name="cordova-plugin-splashscreen" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
 
   <plugin name="cordova-plugin-statusbar" source="npm"/>
   <preference name="StatusBarOverlaysWebView" value="true" />
@@ -45,10 +45,11 @@
     <splash src="res/screen/android/1280-xhdpi.png" density="port-xhdpi"/>
     <splash src="res/screen/android/1600-xxhdpi.png" density="port-xxhdpi"/>
     <splash src="res/screen/android/1920-xxxhdpi.png" density="port-xxxhdpi"/>
-</platform>
+  </platform>
 
   <preference name="SplashMaintainAspectRatio" value="true" />
-   <preference name="SplashScreenDelay" value="3000" />
+  <preference name="SplashScreenDelay" value="3000" />
   <access />
+  <plugin name="cordova-plugin-whitelist" spec="1" />
 
 </widget>
