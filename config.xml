@@ -38,13 +38,16 @@
   <icon src="res/icon/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
   <icon src="res/icon/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
-  <splash src="res/screen/android/320-ldpi.png" platform="android" qualifier="port-ldpi" />
-  <splash src="res/screen/android/480-mdpi.png" platform="android" qualifier="port-mdpi" />
-  <splash src="res/screen/android/800-hdpi.png" platform="android" qualifier="port-hdpi" />
-  <splash src="res/screen/android/1280-xmdpi.png" platform="android" qualifier="port-xhdpi" />
-  <splash src="res/screen/android/1600-xxmdpi.png" platform="android" qualifier="port-xxhdpi" />
-  <splash src="res/screen/android/1920-xxxhdpi.png" platform="android" qualifier="port-xxxhdpi" />
+  <platform name="android">
+    <splash src="res/screen/android/320-ldpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/480-mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/800-hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/1280-xhdpi.png" density="port-xhdpi"/>
+    <splash src="res/screen/android/1600-xxhdpi.png" density="port-xxhdpi"/>
+    <splash src="res/screen/android/1920-xxxhdpi.png" density="port-xxxhdpi"/>
+</platform>
 
+  <preference name="SplashMaintainAspectRatio" value="true" />
   <access />
 
 </widget>
