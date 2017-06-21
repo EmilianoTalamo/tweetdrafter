@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.emilianotalamo.tweetdrafter"
     versionCode = "10"
-    version     = "1.0.1" >
+    version     = "1.0.2" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -24,7 +24,7 @@
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" /> 
   <preference name="target-device" value="universal" />
-  <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
+  <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
 
   <plugin name="cordova-plugin-statusbar" source="npm"/>
   <preference name="StatusBarOverlaysWebView" value="true" />
