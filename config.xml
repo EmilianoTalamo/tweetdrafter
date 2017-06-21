@@ -24,7 +24,7 @@
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" /> 
   <preference name="target-device" value="universal" />
-  <plugin name="cordova-plugin-splashscreen" spec="npm" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
 
   <plugin name="cordova-plugin-statusbar" source="npm"/>
   <preference name="StatusBarOverlaysWebView" value="true" />
