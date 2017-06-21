@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.emilianotalamo.tweetdrafter"
     versionCode = "10"
-    version     = "1.0.3" >
+    version     = "1.0.5" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -56,6 +56,7 @@
   <gap:splash src="res/screen/android/splash-port-xxxhdpi.png" 
     gap:platform="android" gap:density="xxxhdpi" />
 
+  <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SplashMaintainAspectRatio" value="true" />
   <preference name="SplashScreenDelay" value="3000" />
   <access />
