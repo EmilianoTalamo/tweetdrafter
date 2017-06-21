@@ -48,6 +48,7 @@
 </platform>
 
   <preference name="SplashMaintainAspectRatio" value="true" />
+   <preference name="SplashScreenDelay" value="3000" />
   <access />
 
 </widget>
