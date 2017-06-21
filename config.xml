@@ -38,14 +38,23 @@
   <icon src="res/icon/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
   <icon src="res/icon/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
-  <platform name="android">
-    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
-    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
-    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
-    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
-    <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi"/>
-    <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
-  </platform>
+  <gap:splash src="res/screen/android/splash-port-hdpi.png" 
+    gap:platform="android" gap:density="hdpi" />
+    
+  <gap:splash src="res/screen/android/splash-port-ldpi.png" 
+    gap:platform="android" gap:density="ldpi" />
+
+  <gap:splash src="res/screen/android/splash-port-mdpi.png" 
+    gap:platform="android" gap:density="mdpi" />
+
+  <gap:splash src="res/screen/android/splash-port-xhdpi.png" 
+    gap:platform="android" gap:density="xhdpi" />
+
+  <gap:splash src="res/screen/android/splash-port-xxhdpi.png" 
+    gap:platform="android" gap:density="xxhdpi" />
+
+  <gap:splash src="res/screen/android/splash-port-xxxhdpi.png" 
+    gap:platform="android" gap:density="xxxhdpi" />
 
   <preference name="SplashMaintainAspectRatio" value="true" />
   <preference name="SplashScreenDelay" value="3000" />
