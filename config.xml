@@ -17,6 +17,8 @@
       Emiliano Tálamo
   </author>
 
+  <preference name="android-minSdkVersion" value="21" />
+
   <platform name="android" />
   <preference name="permissions" value="none"/>
   <preference name="phonegap-version" value="cli-6.5.0" />
@@ -36,17 +38,12 @@
   <icon src="res/icon/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
   <icon src="res/icon/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
-  <gap:splash src="res/screen/android/splash.png" 
-    gap:platform="android" gap:density="mdpi" />
-  <gap:splash src="res/screen/android/splash_hdpi.png" 
-    gap:platform="android" gap:density="hdpi" />
-  <splash platform="android" qualifier="port-ldpi" src="res/screen/android/splash.png" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" 
-    gap:platform="android" gap:density="xhdpi" />
-  <gap:splash src="res/screen/android/screen-xxhdpi-portrait.png" 
-    gap:platform="android" gap:density="xxhdpi" />
-  <gap:splash src="res/screen/android/screen-xxxhdpi-portrait.png" 
-    gap:platform="android" gap:density="xxxhdpi" />
+  <splash src="res/screen/android/320-ldpi.png" platform="android" qualifier="ldpi" />
+  <splash src="res/screen/android/480-mdpi.png" platform="android" qualifier="mdpi" />
+  <splash src="res/screen/android/800-hdpi.png" platform="android" qualifier="hdpi" />
+  <splash src="res/screen/android/1280-xmdpi.png" platform="android" qualifier="xhdpi" />
+  <splash src="res/screen/android/1600-xxmdpi.png" platform="android" qualifier="xxhdpi" />
+  <splash src="res/screen/android/1920-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
   <access />
 
