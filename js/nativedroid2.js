@@ -679,14 +679,16 @@
             };
 
             _self.bindNavigationSwipe = function() {
-                $(".ui-page:not('.nd2-no-menu-swipe')").on("swiperight swipeleft", function(e) {
+                return false;
+            }
+            /*    $(".ui-page:not('.nd2-no-menu-swipe')").on("swiperight swipeleft", function(e) {
                     if ($(".ui-page-active").jqmData("panel") !== "open") {
                         if (e.type === "swiperight") {
                             $(".ui-panel.ui-panel-position-left:first").panel("open");
                         }
                     }
                 });
-            };
+            };*/
 
             _self.iniWow = function() {
                 if (typeof WOW !== "undefined") {

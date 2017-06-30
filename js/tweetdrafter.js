@@ -3,13 +3,20 @@
 	DWM2A - 2017
 	Profesor Omar Toyos
 */
-
 var tweet = $('#textarea');
 var chars = 140 - $(tweet).val().length;
 var tweetlist;
+$('tweetlink').on('click', function()
+{
+	$.mobile.back();
+});
+$.each(localStorage, function(i)
+{
+	var tw = $('<li class="ui-li-static ui-body-inherit ui-first-child waves-effect waves-button  waves-effect waves-button">' + localStorage[i] + '</li>');
+	$("#tweetlist").append(tw);
+});
 var current = $('document');
 $('#charcount').html(chars);
-$('pageone').unbind('swiperight');
 function charcount()
 {
 	chars = 140 - tweet.val().length;
@@ -49,6 +56,11 @@ function refreshtweets()
 		$('#ghosttweet').attr('value',$(current).text());
 		$('#tweetlink').attr('href','https://twitter.com/home?status=' + $(current).text());
 		refreshtweets();
+	});
+	localStorage.clear();
+	$.each(tweetlist, function(i)
+	{
+		localStorage.setItem(i, $(this).text());
 	});
 }
 
