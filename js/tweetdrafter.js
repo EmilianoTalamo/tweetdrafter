@@ -6,10 +6,6 @@
 var tweet = $('#textarea');
 var chars = 140 - $(tweet).val().length;
 var tweetlist;
-$('tweetlink').on('click', function()
-{
-	$.mobile.back();
-});
 $.each(localStorage, function(i)
 {
 	var tw = $('<li class="ui-li-static ui-body-inherit ui-first-child waves-effect waves-button  waves-effect waves-button">' + localStorage[i] + '</li>');
