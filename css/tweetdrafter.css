@@ -40,19 +40,31 @@ a { -webkit-user-select: none !important; }
 }
 
 #textarea{
-	height: 70vh;
+	height: calc(90vh - 5em);
 	border-bottom: none;
+	margin: auto;
+	padding: 1em;
+	font-size: 1.6em;
+	line-height: 120%;
+	font-family: serif;
+	resize: none;
 }
 
 #charcount{
+	text-align: right;
+	display: block;
 	font-size: 1.3em;
 	font-family: quicksand;
 	padding-top: 0.3em;
-	padding-right: 0.5em;
-	margin-bottom: 1em;
+	padding-right: 1em;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #newtweet{
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
 	width: 1.45em;
 }
 
