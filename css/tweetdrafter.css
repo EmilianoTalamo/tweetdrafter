@@ -40,7 +40,7 @@ a { -webkit-user-select: none !important; }
 }
 
 #textarea{
-	height: calc(90vh - 5em);
+	height: calc(90vh - 3em);
 	border-bottom: none;
 	margin: auto;
 	padding: 1em;
