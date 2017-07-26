@@ -105,7 +105,18 @@ a { -webkit-user-select: none !important; }
 
 #actions{
 	width: 90vw;
+	height: 100%;
 	-webkit-user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#actions > div{
+	width: 90%;
+	position: fixed;
+	background-color: white;
+	top: 25vh;
 }
 
 #popuptweet{
