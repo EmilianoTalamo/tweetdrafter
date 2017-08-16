@@ -1,8 +1,3 @@
-/*
-  Guido Emiliano Tálamo
-  DWM2A - 2017
-  Profesor Omar Toyos
-*/
 
 $(function() {
 

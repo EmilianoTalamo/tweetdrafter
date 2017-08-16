@@ -1,7 +1,5 @@
 /*
-	Guido Emiliano Tálamo
-	DWM2A - 2017
-	Profesor Omar Toyos
+	Emi Tálamo
 */
 var tweet = $('#textarea');
 var chars = 140 - $(tweet).val().length;

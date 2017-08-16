@@ -3,15 +3,9 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.emilianotalamo.tweetdrafter"
     versionCode = "10"
-    version     = "1.1.5" >
+    version     = "1.2" >
 
   <name>tweetdrafter</name>
-
-  <!--
-    Guido Emiliano Tálamo
-    DWM2A - 2017
-    Profesor Omar Toyos
-  -->
 
   <description>
       Write drafts for tweets.
@@ -62,7 +56,6 @@
 
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SplashMaintainAspectRatio" value="true" />
-  <preference name="SplashScreenDelay" value="3000" />
   <access />
   <plugin name="cordova-plugin-whitelist" spec="1" />
 
