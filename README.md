@@ -1,4 +1,5 @@
 # tweetdrafter
 Jquery mobile app for writing tweet drafts.
 
-https://emilianotalamo.github.io/portfolio/tweetdrafter/
+Deprecated version. New version here:
+https://github.com/EmilianoTalamo/tweetdrafter-2
